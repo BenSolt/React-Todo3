@@ -6,17 +6,17 @@ import './components/TodoComponents/Todo.css'
 
 const data = [
   {
-    name:'Start',
+    name:'Learn CSS,HTML',
     id:1,
     purchased: false
   },
   {
-    name:'second',
+    name:'Learn Javascript',
     id:2,
     purchased: false
   },
   {
-    name:'third',
+    name:'Learn React',
     id:3,
     purchased: false
   }
@@ -68,13 +68,14 @@ class App extends React.Component {
   
   render() {
     return (
-      <div>
+      <div className="App">
         <h2>Welcome to your Todo App!</h2>
         <div className='header'>
           <TodoForm addTodo1={this.addTodo}/>
         </div>
         <div className='body'>
-          <TodoList togglePurchased1={this.togglePurchased}
+          <TodoList 
+          togglePurchased={this.togglePurchased}
           todos={this.state.todos}
           clearPurchased1={this.clearPurchased}
           />

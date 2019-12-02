@@ -1,12 +1,23 @@
-.Header{
+.App{
+  background: lightblue;
+  border: 2px solid black;
+  margin: 5%;
+}
+
+.header{
     display: flex;
     justify-content: center;
   }
   
-  .Body{
+  .body{
     display: flex;
     justify-content: center;
     /* border: 2px solid red; */
+  }
+
+  h2{
+    display: flex;
+    justify-content: center; 
   }
 
   .todo-list{
@@ -16,7 +27,7 @@
   }
   
   .todo {
-    background-color: white;
+    background-color: white; 
     width: 80%;
     text-align: center;
     margin: 10px 0;
@@ -24,12 +35,17 @@
     cursor: pointer;
   }
 
-  .todo.purchased  {
-    background-color: rgb(144, 144, 255);
+  .todopurchased  {
+    background-color: red;
+    width: 80%;
+    text-align: center;
+    margin: 10px 0;
+    padding: 1px;
     text-decoration: line-through;
+    
   }
 
-  .clear-btn{
+  .clear-Btn{
     padding: 5px;
     margin: 10px;
   }
