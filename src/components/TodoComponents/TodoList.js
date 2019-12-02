@@ -11,7 +11,7 @@ const TodoList = props => {
                 <Todo
                     key={item.id}
                     item1={item}
-                    togglePurchased={props.togglePurchased}
+                    togglePurchased1={props.togglePurchased}
                 />
             ))}
             <button className='clear-Btn' onClick={props.clearPurchased1}>
